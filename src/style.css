@@ -1,0 +1,87 @@
+/* font
+font-family: 'McLaren', cursive;
+font-family: 'Staatliches', cursive;
+*/
+
+/* color
+#E1E2EF - AZUREISH WHITE
+#84ACCE - LIGHT COBALT BLUE
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #E1E2EF;
+}
+
+h1 {
+    font-family: 'McLaren', cursive;
+    font-size: 3rem;
+    color: #fff;
+}
+
+p {
+    font-family: 'Staatliches', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    background: #84ACCE;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+button {
+    background: transparent;
+    border: solid 1px black;
+}
+
+span, sup, small, select, input, button {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+}
+
+
+/* text-animation */
+.text_container {
+    background: #494850;
+    width: 30vh;
+    height: 15vh;
+    padding-left: 5rem;
+    position: relative;
+}
+
+.text_container h1{
+    transition: 2s ease-in;
+    animation: text 2s;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes text {
+    0% {
+        top:-50%; 
+    }
+    90% {
+        top: 50%;
+    }
+}
+
+
+
+
